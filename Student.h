@@ -17,6 +17,10 @@ struct Student {
 
     Student(const string &firstName, const string &lastName, const string &studentNumber,
             double midterm1, double midterm2, double finalExam);
+
+    void setMidterm1(double grade);
+    void setMidterm2(double grade);
+    void setFinalExam(double grade);
 };
 
 
