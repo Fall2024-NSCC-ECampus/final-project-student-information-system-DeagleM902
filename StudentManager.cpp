@@ -93,7 +93,7 @@ void StudentManager::loadFromFile(const string &filename) {
 //Sorts students by last name, then first name.
 void StudentManager::sortStudents() {
   sort(students.begin(), students.end(), [](const Student *s1, const Student *s2) {
-    if (s1->lastName < s2->lastName) {
+    if (s1->lastName == s2->lastName) {
       return s1->firstName < s2->firstName;
     }
     return s1->lastName < s2->lastName;

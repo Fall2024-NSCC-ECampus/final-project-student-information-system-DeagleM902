@@ -145,7 +145,7 @@ void MenuHandler::changeStudentInformation() {
     targetStudent->setMidterm2(newMidterm2);
     targetStudent->setFinalExam(newFinalExam);
     manager.saveToFile("students.txt");
-    cout << "Modification successful.";
+    cout << "Modification successful." << endl;
 }
 
 //Verifies student exists, prints student information
